@@ -1,0 +1,60 @@
+/* make picture to be in full screen */
+.landing-page {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.landing-page-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /*make image cover entire container without stretching*/
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.welcome-message {
+  font-size: 3.5rem;
+  font-weight: 300;
+  color: #ffffff;
+  margin-bottom: 2rem;
+  letter-spacing: 2px;
+  text-shadow: 0 2px 4px #000000;
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+.welcome-message:hover {
+  text-shadow: 0 4px 8px #000000;
+  opacity: 0.5;
+}
+
+.register-button {
+  display: inline-block;
+  font-weight: 400;
+  letter-spacing: 1px;
+  padding: 1rem 2.5rem;
+  color: #000000;
+  background-color: #ffffff;
+  opacity: 1;
+  text-decoration: none;
+  transform: none;
+}
+.register-button:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  transform: none;
+}
+.register-button:active {
+  opacity: 0.8;
+  transform: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  padding: 1rem 2.5rem;
+}

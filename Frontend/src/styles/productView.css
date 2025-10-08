@@ -1,0 +1,114 @@
+.product-view-container {
+    padding: 1rem;
+    padding-top: 6rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-details {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin: auto;
+}
+
+.product-details .product-individual-image {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    max-width: 25rem;
+    max-height: 35rem;
+}
+
+.product-details .product-details-text {
+    margin-left: 2rem;
+    width: 100%;
+}
+
+.product-details .product-individual-name {
+    font-size: 1.3rem;
+    font-weight: 600;
+    word-break: break-word;
+    margin-bottom: 0.5rem;
+    margin-top: 0rem;
+}
+
+.product-details .product-individual-price {
+    display: inline;
+}
+
+.product-details .product-individual-price-title,
+.product-individual-description-title,
+.product-individual-material-title {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: gray;
+    word-break: break-word;
+    margin-bottom: 0.2rem;
+}
+
+.product-details .product-individual-price-number {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 0;
+}
+
+.product-details .product-individual-description {
+    min-height: 10rem;
+    margin-top: 0;
+}
+
+.product-details .product-individual-material {
+    min-height: 6rem;
+    margin-top: 0;
+}
+
+.title-line-product {
+    border: none;
+    height: 1px;
+    background-color: #dee2e6;
+}
+
+.product-button {
+    background-color: black; /* Green */
+    font-family: 'Montserrat', sand-serif;
+    font-weight: 600;
+    padding: 1rem;
+    border-radius: 2rem;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+@media (max-width: 1200px) {
+    .product-details .product-individual-image {
+        max-width: 20rem;
+        max-height: 28rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .product-details {
+        flex-direction: column;
+        align-items: center;
+    }
+    .product-details .product-individual-image {
+        max-width: 18rem;
+        max-height: 25rem;
+    }
+    .product-details .product-details-text {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .product-details .product-individual-image {
+        max-width: 100%;
+        height: auto;
+    }
+}

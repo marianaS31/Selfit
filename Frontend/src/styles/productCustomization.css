@@ -1,0 +1,170 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('../assets/fonts/Roboto.ttf');
+}
+
+.product-customization-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding-top: 5rem;
+}
+
+.product-customization-form {
+  padding: 20px;
+  width: 320px;
+  text-align: center;
+}
+
+.product-customization-title {
+  font-size: 20px;
+  width: 100%;
+}
+
+.product-customization-info,
+.product-customization-label,
+.product-customization-input,
+.go-back-button,
+.contact-seller-button,
+.view-orders-button {
+  font-family: 'Roboto', sans-serif;
+}
+
+.product-customization-info {
+  font-size: 14px;
+}
+
+.product-customization-group {
+  position: relative;
+  margin: 1rem 0 2rem;
+}
+
+.product-customization-input,
+.product-customization-submit,
+.go-back-button,
+.contact-seller-button,
+.view-orders-button {
+  height: 3rem;
+  width: 100%;
+}
+
+.product-customization-input {
+  padding: 1rem 1rem 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.product-customization-label {
+  position: absolute;
+  left: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: #6e6e6e;
+  pointer-events: none;
+  transition: all 0.15s ease-in-out;
+}
+
+.product-customization-input:focus + .product-customization-label,
+.product-customization-input:not(:placeholder-shown)
+  + .product-customization-label {
+  top: 30%;
+  left: 1rem;
+  font-size: 12px;
+  color: #000000;
+  font-weight: 500;
+}
+
+.product-customization-submit,
+.go-back-button,
+.contact-seller-button,
+.view-orders-button {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 2rem;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 1rem;
+}
+
+.product-customization-submit {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.view-orders-button {
+  color: #ffffff;
+  background-color: #4a90e2;
+}
+
+.go-back-button {
+  color: #000000;
+  background-color: #ffffff;
+  border: 2px solid #000000;
+}
+
+.contact-seller-button {
+  background-color: #000000;
+  color: #ffffff;
+  border: 2px solid #000000;
+  gap: 0.5rem;
+}
+
+.product-customization-submit,
+.go-back-button,
+.contact-seller-button,
+.view-orders-button {
+  transition: opacity 0.15s ease-in;
+}
+
+.product-customization-submit:hover,
+.go-back-button:hover,
+.contact-seller-button:hover,
+.view-orders-button:hover {
+  opacity: 0.8;
+}
+
+.product-customization-submit:active,
+.go-back-button:active,
+.contact-seller-button:active,
+.view-orders-button:active {
+  outline: 2px solid #000000;
+  outline-offset: 2px;
+}
+
+.product-customization-submit:disabled,
+.contact-seller-button:disabled {
+  background-color: #cccccc;
+  border: none;
+  cursor: not-allowed;
+}
+
+.product-error-message {
+  color: red;
+  font-size: 12px;
+  text-align: left;
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+  position: absolute;
+  bottom: -2rem;
+  left: 0;
+}
+
+.contact-seller-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.loading-gif {
+  width: 1.25rem;
+  height: 1.25rem;
+}

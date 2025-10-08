@@ -1,0 +1,199 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('../assets/fonts/Roboto.ttf');
+}
+
+.authentication-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.authentication-form {
+  padding: 20px;
+  width: 320px;
+  text-align: center;
+}
+
+.auth-title {
+  font-size: 20px;
+  width: 100%;
+}
+
+.forgot-password,
+.auth-info,
+.label-placeholder,
+.account-exist-question,
+.form-input {
+  font-family: 'Roboto', sans-serif;
+}
+
+.auth-info {
+  font-size: 14px;
+}
+
+.form-group {
+  position: relative;
+  margin: 1rem 0;
+}
+
+.form-input,
+.create-account,
+.user-type-button {
+  height: 3rem;
+  width: 100%;
+}
+
+.form-input {
+  padding: 1rem 1rem 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+/* label position instead of placeholder */
+.label-placeholder {
+  position: absolute;
+  left: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: #6e6e6e;
+  pointer-events: none;
+  transition: all 0.15s ease-in-out;
+}
+
+/* label when focused + label has content */
+.form-input:focus + .label-placeholder,
+.form-input:not(:placeholder-shown) + .label-placeholder {
+  top: 30%;
+  left: 1rem;
+  font-size: 12px;
+  color: #000000;
+  font-weight: 500;
+}
+
+.input-password {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.input-password input {
+  padding-right: 30px;
+}
+
+.icon-wrapper {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+/* extra information on password eye */
+.tooltip {
+  position: absolute;
+  bottom: 75%;
+  left: 50%;
+  font-size: 10px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #000000;
+  padding: 8px;
+  border-radius: 2px;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.icon-wrapper:hover .tooltip {
+  opacity: 1;
+}
+
+/* submit button styles */
+.submit-authentication {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 2rem;
+  color: #ffffff;
+  background-color: #000000;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.submit-authentication:active {
+  outline: 2px solid #000000;
+  outline-offset: 2px;
+}
+
+.account-exist-question,
+.forgot-password {
+  font-size: 14px;
+}
+/* link styles */
+.signup-method,
+.forgot-password-link {
+  font-weight: 600;
+  color: #000000;
+  outline: none;
+}
+.signup-method:active,
+.forgot-password-link:active {
+  padding: 4px;
+  border: 2px solid #000000;
+  border-radius: 5px;
+}
+.user-type-selection {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 2rem;
+}
+.user-type-button {
+  height: 2.5rem;
+  border: 1px solid #ccc;
+  background-color: #ffffff;
+  border-radius: 5px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Customer button highlighted by default */
+.user-type-button:first-child {
+  background-color: black;
+  color: white;
+  border-color: #000000;
+}
+
+/* Seller button overrides when it activates */
+.user-type-button:last-child.active {
+  background-color: #000000;
+  color: white;
+  border-color: #000000;
+}
+
+/* Change not active button color */
+.user-type-button:first-child:not(.active) {
+  background-color: #ffffff;
+  color: #000000;
+  border-color: #ccc;
+}
+
+.auth-error-message {
+  color: red;
+  font-size: 12px;
+  text-align: left;
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+  position: absolute;
+  bottom: -1.6rem;
+  left: 0;
+}

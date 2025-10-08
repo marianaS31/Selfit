@@ -1,0 +1,193 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('../assets/fonts/Roboto.ttf');
+}
+
+.seller-edit-vertical-line {
+  background-color: #dee2e6;
+  border: none;
+  width: 1px;
+}
+
+.seller-profile-edit-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding-top: 5rem;
+}
+
+.seller-profile-edit-form {
+  padding: 20px;
+  width: 50%;
+  text-align: center;
+}
+
+.seller-profile-edit-title {
+  font-size: 20px;
+  width: 100%;
+}
+
+.seller-profile-edit-info,
+.seller-profile-edit-label,
+.seller-profile-edit-input,
+.go-back-home {
+  font-family: 'Roboto', sans-serif;
+}
+
+.seller-profile-edit-info {
+  font-size: 14px;
+}
+
+.seller-profile-edit-info-image-and-detail-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 4rem;
+  margin: 3rem 0 3rem 0;
+  width: 100%;
+  height: 100%;
+}
+
+.seller-profile-edit-info-image-and-detail-row .row-left,
+.row-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.image-preview-container {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  border: 2px solid #ccc;
+  justify-content: center;
+  background: white;
+}
+
+.image-preview-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.image-preview-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.seller-image-input-button {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.seller-profile-edit-group {
+  position: relative;
+  margin: 1rem 0 2rem;
+}
+
+.seller-profile-edit-input,
+.seller-profile-edit-submit {
+  height: 3rem;
+  width: 100%;
+}
+
+.seller-profile-edit-input {
+  padding: 1rem 1rem 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.seller-profile-edit-label {
+  position: absolute;
+  left: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: #6e6e6e;
+  pointer-events: none;
+  transition: all 0.15s ease-in-out;
+}
+
+.seller-profile-edit-input:focus + .seller-profile-edit-label,
+.seller-profile-edit-input:not(:placeholder-shown)
+  + .seller-profile-edit-label {
+  top: 30%;
+  left: 1rem;
+  font-size: 12px;
+  color: #000000;
+  font-weight: 500;
+}
+
+.seller-profile-edit-submit {
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 2rem;
+  color: #ffffff;
+  background-color: #000000;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.seller-profile-edit-submit:active {
+  outline: 2px solid #000000;
+  outline-offset: 2px;
+}
+
+.seller-edit-error-message {
+  color: red;
+  font-size: 12px;
+  text-align: left;
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+  position: absolute;
+  bottom: -2rem;
+  left: 0;
+}
+
+.success-message {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #4caf50;
+  color: #ffffff;
+  text-align: center;
+  font-size: 1rem;
+  border-radius: 10px;
+}
+
+.go-back-home {
+  font-size: 14px;
+}
+
+.go-back-home-link {
+  font-weight: 600;
+  color: #000000;
+  outline: none;
+}
+
+.go-back-home-link:active {
+  padding: 4px;
+  border: 2px solid #000000;
+  border-radius: 5px;
+}

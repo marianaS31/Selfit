@@ -1,0 +1,197 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('../assets/fonts/Roboto.ttf');
+}
+
+.create-product-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding-top: 5rem;
+}
+
+.create-product-form {
+  background-color: white;
+  padding: 1rem 0.75rem;
+  width: 100%;
+  max-width: 320px;
+}
+
+.create-product-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.create-product-info,
+.create-product-label,
+.create-product-input,
+.create-product-label-description,
+.create-product-select,
+.create-product-textarea {
+  font-family: 'Roboto', sans-serif;
+}
+
+.create-product-info {
+  font-size: 14px;
+  margin-bottom: 1rem;
+}
+
+.create-product-group {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.create-product-input,
+.create-product-select,
+.create-product-textarea,
+.create-product-submit,
+.go-back-button {
+  height: 3rem;
+  width: 100%;
+}
+
+.create-product-input,
+.create-product-select,
+.create-product-textarea {
+  padding: 1rem 1rem 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.create-product-textarea {
+  resize: vertical;
+  min-height: 6rem;
+}
+
+.create-product-label {
+  position: absolute;
+  left: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: #6e6e6e;
+  pointer-events: none;
+  transition: all 0.15s ease-in-out;
+}
+.create-product-label-description {
+  position: absolute;
+  left: 1.5rem;
+  top: 25%;
+  transform: translateY(-55%);
+  font-size: 14px;
+  color: #6e6e6e;
+  pointer-events: none;
+  transition: all 0.15s ease-in-out;
+}
+
+.create-product-input:focus + .create-product-label,
+.create-product-input:not(:placeholder-shown) + .create-product-label,
+.create-product-select:focus + .create-product-label,
+.create-product-select:not(:placeholder-shown) + .create-product-label {
+  top: 30%;
+  left: 1rem;
+  font-size: 12px;
+  color: #000000;
+  font-weight: 500;
+}
+.create-product-textarea:focus + .create-product-label-description,
+.create-product-textarea:not(:placeholder-shown)
+  + .create-product-label-description {
+  top: 10%;
+  left: 1rem;
+  font-size: 12px;
+  color: #000000;
+  font-weight: 500;
+}
+
+.create-product-submit {
+  color: #ffffff;
+  background-color: #000000;
+  border: none;
+}
+.go-back-button {
+  color: #000000;
+  background-color: #ffffff;
+  border: 2px solid #000000;
+}
+
+.create-product-submit,
+.go-back-button {
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 2rem;
+  font-weight: 600;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: opacity 0.15s ease-in-out;
+  margin-bottom: 1rem;
+}
+
+.create-product-submit:hover {
+  opacity: 0.8;
+}
+
+.create-product-submit:active {
+  outline: 2px solid #000000;
+  outline-offset: 2px;
+}
+
+.create-product-submit.product-created {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.create-product-submit.product-created:hover {
+  background-color: #ccc;
+}
+
+.measurement-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  padding: 0.75rem;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+.remove-measurement {
+  background-color: #ff4444;
+  color: white;
+  border: none;
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.remove-measurement:hover {
+  background-color: #cc0000;
+}
+
+.create-product-error-message {
+  color: red;
+  font-size: 12px;
+  text-align: left;
+  margin-left: 1rem;
+  position: absolute;
+  bottom: -1.75rem;
+  left: 0;
+}
+
+@media (max-width: 580px) {
+  .create-product-form {
+    width: 320px;
+    max-width: none;
+    padding: 2rem;
+  }
+}

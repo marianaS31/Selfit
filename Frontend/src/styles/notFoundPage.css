@@ -1,0 +1,62 @@
+.not-found-container {
+  position: fixed;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #f3f4f6;
+}
+.not-found-content {
+  text-align: center;
+}
+.not-found-error {
+  font-size: 8rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
+
+.not-found-message {
+  font-size: 2rem;
+  color: #666;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+.not-found-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.not-found-button {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 2rem;
+  color: #ffffff;
+  background-color: #000000;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.not-found-button:active {
+  outline: 2px solid #000000;
+  outline-offset: 2px;
+}
+
+.back-button {
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #ccc;
+}

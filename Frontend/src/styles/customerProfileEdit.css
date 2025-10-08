@@ -1,0 +1,132 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('../assets/fonts/Roboto.ttf');
+}
+
+.customer-profile-edit-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding-top: 5rem;
+}
+
+.customer-profile-edit-form {
+  padding: 20px;
+  width: 320px;
+  text-align: center;
+}
+
+.customer-profile-edit-title {
+  font-size: 20px;
+  width: 100%;
+}
+
+.customer-profile-edit-info,
+.customer-profile-edit-label,
+.customer-profile-edit-input,
+.go-back-home {
+  font-family: 'Roboto', sans-serif;
+}
+
+.customer-profile-edit-info {
+  font-size: 14px;
+}
+
+.customer-profile-edit-group {
+  position: relative;
+  margin: 1rem 0 2rem;
+}
+
+.customer-profile-edit-input,
+.customer-profile-edit-submit {
+  height: 3rem;
+  width: 100%;
+}
+
+.customer-profile-edit-input {
+  padding: 1rem 1rem 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.customer-profile-edit-label {
+  position: absolute;
+  left: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: #6e6e6e;
+  pointer-events: none;
+  transition: all 0.15s ease-in-out;
+}
+
+.customer-profile-edit-input:focus + .customer-profile-edit-label,
+.customer-profile-edit-input:not(:placeholder-shown)
+  + .customer-profile-edit-label {
+  top: 30%;
+  left: 1rem;
+  font-size: 12px;
+  color: #000000;
+  font-weight: 500;
+}
+
+.customer-profile-edit-submit {
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 2rem;
+  color: #ffffff;
+  background-color: #000000;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.customer-profile-edit-submit:active {
+  outline: 2px solid #000000;
+  outline-offset: 2px;
+}
+
+.customer-edit-error-message {
+  color: red;
+  font-size: 12px;
+  text-align: left;
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+  position: absolute;
+  bottom: -2rem;
+  left: 0;
+}
+
+.success-message {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #4caf50;
+  color: #ffffff;
+  text-align: center;
+  font-size: 1rem;
+  border-radius: 10px;
+}
+
+.go-back-home {
+  font-size: 14px;
+}
+
+.go-back-home-link {
+  font-weight: 600;
+  color: #000000;
+  outline: none;
+}
+
+.go-back-home-link:active {
+  padding: 4px;
+  border: 2px solid #000000;
+  border-radius: 5px;
+}

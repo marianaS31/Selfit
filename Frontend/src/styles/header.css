@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 4rem;
+  width: 100%;
+  color: #000000;
+  background-color: #ebebeb;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000; /*ensure that header is always on top */
+}
+
+.site-title {
+  font-size: 2rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: opacity 0.3s ease;
+  opacity: 0.5;
+}
+.site-title:hover {
+  opacity: 1;
+}
+
+.user-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.profile-edit-link,
+.logout-link {
+  display: flex;
+  align-items: center;
+}
+
+.profile-edit-icon,
+.logout-icon,
+.orders-icon {
+  width: 1.75rem;
+  height: 1.75rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  opacity: 0.7;
+}
+
+.profile-edit-icon:hover,
+.logout-icon:hover,
+.orders-icon:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
