@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SelFit", "SelFit.csproj", "{ECE4A8C4-B173-44EB-AC95-1B2B94EA851C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Selfit.Tests", "..\Selfit.Tests\Selfit.Tests.csproj", "{6B198461-9903-4047-98E7-45EECC1022BF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ECE4A8C4-B173-44EB-AC95-1B2B94EA851C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECE4A8C4-B173-44EB-AC95-1B2B94EA851C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECE4A8C4-B173-44EB-AC95-1B2B94EA851C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECE4A8C4-B173-44EB-AC95-1B2B94EA851C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B198461-9903-4047-98E7-45EECC1022BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B198461-9903-4047-98E7-45EECC1022BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B198461-9903-4047-98E7-45EECC1022BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B198461-9903-4047-98E7-45EECC1022BF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {665F0FB7-6D73-4B3C-8838-65E2A400CB6F}
+	EndGlobalSection
+EndGlobal
